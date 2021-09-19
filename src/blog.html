@@ -4,24 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <title>IGV Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/blog.css">
 </head>
 
 <body>
-  <header>
-    <img src="./imgs/logo.png" width="150px" height="150px" alt="IGV Dev">
-    <h1>IGV Dev</h1>
-    <ul>
-      <li><a href="./">Home</a></li>
+  <header class="header">
+    <a href="./">
+      <img src="./imgs/svgs/logo_blog.svg" width="400px" alt="IGV Dev" class="header-logo">
+    </a>
+    <ul class="header-ul">
       <li><a href="./blog.html">Blog</a></li>
       <li><a href="./equipe.html">Equipe</a></li>
       <li><a href="./contato.html">Contato</a></li>
     </ul>
+    <a href="contato.html" class="header-contrate">Contrate</a>
+    <img class="header-bg" src="./imgs/svgs/header_bg_blog.svg" alt="">
   </header>
 
-  <section>
-    <div>
+  <section class="content">
+    <div class="post">
       <h1>React: por que considerá-lo no seu projeto?</h1>
-      <img src="./imgs/post1.jpg" width="450px" height="300px alt=" React">
+      <div class="post-image-container"><img src="./imgs/post1.jpg" alt="React"></div>
 
       <p>
         React é uma biblioteca JavaScript usada para criar interfaces de usuário (UI’s), que é mantida pelo Facebook.
@@ -32,16 +39,18 @@
         dos últimos 10 anos.
       </p>
 
-      <h2><a href="./posts/post1.html">Saiba mais...</a></h2>
+      <div class="post-button">
+        <a href="./posts/post1.html">Leia mais</a>
+      </div>
 
-      <hr />
     </div>
+    <hr />
 
 
     <div class="post">
       <h1>O que são API's, front-end e back-end? Conceitos de Desenvolvimento para não programadores</h1>
 
-      <img src="./imgs/post2.jpeg" width="450px" height="300px alt=" O que são API's, front-end e back-end?">
+      <div class="post-image-container"><img src="./imgs/post2.jpeg" alt="O que são API's, front-end e back-end?"></div>
 
       <p>
         Se você é o CEO, comercial, marketing ou qualquer outra área de uma startup, que não seja a de desenvolvimento,
@@ -54,16 +63,18 @@
         desenvolver o produto que querem lançar no mercado.
       </p>
 
-      <h2><a href="./posts/post2.html">Saiba mais...</a></h2>
+      <div class="post-button">
+        <a href="./posts/post2.html">Leia mais</a>
+      </div>
 
-      <hr />
     </div>
+    <hr />
 
 
     <div class="post">
       <h1>JavaScript – 20 anos de história e construção da web</h1>
 
-      <img src="./imgs/post3.jpg" alt="">
+      <div class="post-image-container"><img src="./imgs/post3.jpg" alt="Javascript - 20 anos de história"></div>
 
       <p>
         Você se lembra de alguns fatos que marcaram o ano de 1995? Pensando rapidamente, recordo que a Microsoft lançou
@@ -74,23 +85,33 @@
         rssss).
       </p>
 
-      <h2><a href="./posts/post3.html">Saiba mais...</a></h2>
+      <div class="post-button">
+        <a href="./posts/post3.html">Leia mais</a>
+      </div>
 
-      <hr />
     </div>
   </section>
 
-  <footer>
-    <div>
-      <ul>
-        <li><a href="https://twitter.com" target="_blank">Twitter<img src="./imgs/logo_twitter.png" width="20px"
-              height="20px" /></a></li>
-        <li><a href="https://instagram.com" target="_blank">Instagram<img src="./imgs/logo_instagram.png" width="30px"
-              height="30px" /></a></li>
+  <footer class="footer">
+    <div class="footer-info">
+      <ul class="footer-social">
+        <li><a href="https://twitter.com" target="_blank"><img src="./imgs/svgs/twitter.svg" /></a></li>
+        <li><a href="https://instagram.com" target="_blank"><img src="./imgs/svgs/instagram.svg" /></a></li>
       </ul>
-      <h4>IGV@example.com</h4>
-      <h4>IGV Dev &copy; - 2021</h4>
+
+      <div class="footer-address">
+        <p>IGV@example.com <br />Rua Júlia da Costa, nº 4 <br /> Saco dos Limões, Florianópolis - SC</p>
+      </div>
+
     </div>
+
+    <div class="footer-copyright">
+      <img src="/src/imgs/svgs/footer_img_blog.svg" alt="Footer Image">
+      <p>IGV Dev &copy; - 2021</p>
+    </div>
+
+    </div>
+    <img src="imgs/svgs/footer_bg_blog.svg" class="footer-bg" />
   </footer>
 </body>
 
