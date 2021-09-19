@@ -4,26 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <title>O que são API's, front-end e back-end? - IGV Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/post.css">
 </head>
 
 <body>
-  <header>
-    <img src="../imgs/logo.png" width="150px" height="150px" alt="IGV Dev">
-    <h1>IGV Dev</h1>
-    <ul>
-      <li><a href="../">Home</a></li>
+  <header class="header">
+    <a href="../">
+      <img src="../imgs/svgs/logo_blog.svg" width="400px" alt="IGV Dev" class="header-logo">
+    </a>
+    <ul class="header-ul">
       <li><a href="../blog.html">Blog</a></li>
       <li><a href="../equipe.html">Equipe</a></li>
       <li><a href="../contato.html">Contato</a></li>
     </ul>
+    <a href="contato.html" class="header-contrate">Contrate</a>
+    <img class="header-bg" src="../imgs/svgs/header_bg_blog.svg" alt="">
   </header>
 
-  <section>
+  <section class="post">
 
-    <h1>JavaScript – 20 anos de história e construção da web</h1>
-
-    <img src="../imgs/post3.jpg" alt="JavaScript – 20 anos de história e construção da web">
-
+    <div class="post-heading">
+      <h1>JavaScript – 20 anos de história e construção da web</h1>
+      <img src="../imgs/post3.jpg" alt="JavaScript – 20 anos de história e construção da web">
+    </div>
     <p>
       Você se lembra de alguns fatos que marcaram o ano de 1995? Pensando rapidamente, recordo que a Microsoft lançou o
       Internet Explorer, dando início à “Guerra dos Browsers” contra o Netscape; teve também a criação da plataforma
@@ -202,24 +209,35 @@
       HTML, CSS e JavaScript”, finaliza.
     </p>
 
-    <h5>Eduardo Mustafa</h5>
-    <h5>Publicado em: 11/01/2016</h5>
-    <h5><a href="https://imasters.com.br/front-end/javascript-20-anos-de-historia-e-construcao-da-web">Fonte</a></h5>
+    <div class="post-footer">
+      <h5>Eduardo Mustafa</h5>
+      <h5>Publicado em: 11/01/2016</h5>
+      <h5><a href="https://imasters.com.br/front-end/javascript-20-anos-de-historia-e-construcao-da-web">Fonte</a></h5>
+    </div>
 
   </section>
 
 
-  <footer>
-    <div>
-      <ul>
-        <li><a href="https://twitter.com" target="_blank">Twitter<img src="../imgs/logo_twitter.png" width="20px"
-              height="20px" /></a></li>
-        <li><a href="https://instagram.com" target="_blank">Instagram<img src="../imgs/logo_instagram.png" width="30px"
-              height="30px" /></a></li>
+  <footer class="footer">
+    <div class="footer-info">
+      <ul class="footer-social">
+        <li><a href="https://twitter.com" target="_blank"><img src="../imgs/svgs/twitter.svg" /></a></li>
+        <li><a href="https://instagram.com" target="_blank"><img src="../imgs/svgs/instagram.svg" /></a></li>
       </ul>
-      <h4>IGV@example.com</h4>
-      <h4>IGV Dev &copy; - 2021</h4>
+
+      <div class="footer-address">
+        <p>IGV@example.com <br />Rua Júlia da Costa, nº 4 <br /> Saco dos Limões, Florianópolis - SC</p>
+      </div>
+
     </div>
+
+    <div class="footer-copyright">
+      <img src="../imgs/svgs/footer_img_blog.svg" alt="Footer Image">
+      <p>IGV Dev &copy; - 2021</p>
+    </div>
+
+    </div>
+    <img src="../imgs/svgs/footer_bg_blog.svg" class="footer-bg" />
   </footer>
 </body>
 
