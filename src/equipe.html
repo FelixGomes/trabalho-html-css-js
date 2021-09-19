@@ -5,79 +5,97 @@
   <meta charset="UTF-8">
   <title>Equipe - IGV Dev</title>
   <link rel="stylesheet" href="/src/css/equipe.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <img src="./imgs/logo.png" width="150px" height="150px" alt="IGV Dev">
-    <h1>IGV Dev</h1>
-    <ul>
-      <li><a href="./">Home</a></li>
+  <header class="header">
+    <a href="./">
+      <img src="./imgs/svgs/logo.svg" width="400px" alt="IGV Dev" class="header-logo">
+    </a>
+    <ul class="header-ul">
       <li><a href="./blog.html">Blog</a></li>
       <li><a href="./equipe.html">Equipe</a></li>
       <li><a href="./contato.html">Contato</a></li>
     </ul>
+    <a href="contato.html" class="header-contrate">Contrate</a>
+    <img class="header-bg" src="./imgs/svgs/header_bg.svg" alt="">
   </header>
 
-  <section>
 
-    <div>
-      <h1>Serviços Disponíveis</h1>
+  <section class="content">
+
+    <div class="content-heading">
+      <h1>Equipe</h1>
       <p>
-        A IGV Dev. conta com uma equipe de desenvolvedores capacitados,
-        responsáveis pela criação de aplicações que interagem com o usuário e prezam por uma melhor
-        experiência do mesmo,
-        utilizando as melhores tecnologias disponíveis no mercado.
-
+        A IGV Dev. conta com uma equipe de desenvolvedores capacitados, responsáveis pela criação de aplicações que
+        interagem com o usuário e prezam por uma melhor experiência do
+        mesmo, utilizando as melhores tecnologias disponíveis no mercado.
       </p>
     </div>
 
-    <h1>Equipe</h1>
 
-    <div>
-      <h2>Isadora Medeiros</h2>
-      <h3>Desenvolvedora Back-end</h3>
-      <img src="imgs/perfil_isadora.jpg" alt="Foto de Isadora Medeiros" width="200px" height="200px" />
-      <p>
-        Bióloga, professora, mãe.
-        Amo arco-íris e amo pedalar. Programar também.
-      </p>
+    <div class="team-card">
+      <img src="imgs/perfil_isadora.jpg" alt="Foto de Isadora Medeiros" />
+      <div class="team-card-info">
+        <h2>Isadora Medeiros</h2>
+        <h3>Desenvolvedora Back-end</h3>
+        <p>
+          Bióloga, professora, mãe.
+          Amo arco-íris e amo pedalar. Programar também.
+        </p>
+      </div>
     </div>
 
-    <div>
-      <h2>Gustavo Felix Gomes</h2>
-      <h3>Desenvolvedor Full Stack</h3>
-      <img src="imgs/perfil_gustavo.jpg" alt="Foto de Gustavo Felix Gomes" width="200px" height="200px" />
-      <p>
-        Ciclista, metaleiro e desenvolvedor.
-        Gosta de trabalhar com projetos desafiadores e criativos.
-      </p>
+    <div class="team-card">
+      <img src="imgs/perfil_gustavo.jpg" alt="Foto de Gustavo Felix Gomes" />
+      <div class="team-card-info">
+        <h2>Gustavo Felix Gomes</h2>
+        <h3>Desenvolvedor Full Stack</h3>
+        <p>
+          Ciclista, metaleiro e desenvolvedor.
+          Gosta de trabalhar com projetos desafiadores e criativos.
+        </p>
+      </div>
     </div>
 
-    <div>
-      <h2>Vinícius</h2>
-      <h3>Desenvolvedor Front-end</h3>
-      <img src="imgs/perfil_vinicius.jpg" width="200px" height="200px" />
-      <p>
-        React, UI/UX e longas caminhadas na praia.
-      </p>
+    <div class="team-card">
+      <img src="imgs/perfil_vinicius.jpg" />
+      <div class="team-card-info">
+        <h2>Vinícius dos Reis</h2>
+        <h3>Desenvolvedor Front-end</h3>
+        <p>
+          React, UI/UX e longas caminhadas na praia.
+        </p>
+      </div>
     </div>
 
   </section>
 
 
-  <footer>
-    <div>
-      <ul>
-        <li><a href="https://twitter.com" target="_blank">Twitter<img src="./imgs/logo_twitter.png" width="20px"
-              height="20px" /></a></li>
-        <li><a href="https://instagram.com" target="_blank">Instagram<img src="./imgs/logo_instagram.png" width="30px"
-              height="30px" /></a></li>
+  <footer class="footer">
+    <div class="footer-info">
+      <ul class="footer-social">
+        <li><a href="https://twitter.com" target="_blank"><img src="./imgs/svgs/twitter.svg" /></a></li>
+        <li><a href="https://instagram.com" target="_blank"><img src="./imgs/svgs/instagram.svg" /></a></li>
       </ul>
-      <h4>IGV@example.com</h4>
-      <h4>IGV Dev &copy; - 2021</h4>
+
+      <div class="footer-address">
+        <p>IGV@example.com <br />Rua Júlia da Costa, nº 4 <br /> Saco dos Limões, Florianópolis - SC</p>
+      </div>
+
     </div>
-  </footer>
+
+    <div class="footer-copyright">
+      <img src="/src/imgs/svgs/footer_img.svg" alt="Footer Image">
+      <p>IGV Dev &copy; - 2021</p>
+    </div>
+
+    </div>
+    <img src="imgs/svgs/footer_bg.svg" class="footer-bg" />
 </body>
 
 </html>
