@@ -4,70 +4,101 @@
 <head>
   <meta charset="UTF-8">
   <title>Contato - IGV Dev</title>
+  <link rel="stylesheet" href="./css/contato.css">
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <img src="./imgs/logo.png" width="150px" height="150px" alt="IGV Dev">
-    <h1>IGV Dev</h1>
-    <ul>
-      <li><a href="./">Home</a></li>
+  <header class="header">
+    <a href="./">
+      <img src="./imgs/svgs/logo.svg" width="400px" alt="IGV Dev" class="header-logo">
+    </a>
+    <ul class="header-ul">
       <li><a href="./blog.html">Blog</a></li>
       <li><a href="./equipe.html">Equipe</a></li>
       <li><a href="./contato.html">Contato</a></li>
     </ul>
+    <a href="contato.html" class="header-contrate">Contrate</a>
+    <img class="header-bg" src="./imgs/svgs/header_bg.svg" alt="">
   </header>
 
-  <section>
-    <h1>Fale conosco!</h1>
+  <section class="content">
+    <div class="content-heading">
+      <h1>Contato</h1>
+    </div>
     <form id="contato-form">
-      <div>
-        <label for="contato-nome">Nome:</label>
+      <div class="contato-field">
+        <label for="contato-nome">Nome</label>
         <input id="contato-nome" type="text">
       </div>
-      <div>
-        <label for="contato-e-mail">E-mail:</label>
+      <div class="contato-field">
+        <label for="contato-e-mail">E-mail</label>
         <input id="contato-e-mail" type="email">
       </div>
-      <label for="data-nasc">Data de nascimento:</label>
-      <input type="date" name="nomeDataNasc" id="idDataNasc" />
-      <div>
-        <label for="novidades">Deseja receber nossas novidades por e-mail?:</label>
-        <input type="radio" name="novidades" id=idSim /> Sim
-        <input type="radio" name="novidades" id=idNão /> Não
+      <div class="contato-field">
+        <label for="data-nasc">Data de nascimento</label>
+        <input type="date" name="nomeDataNasc" id="idDataNasc" />
       </div>
-      <div>
-        <label for="contato-msg">Mensagem:</label>
+      <div class="contato-field">
+        <label for="novidades">Deseja receber nossas novidades por e-mail?</label>
+        <div class="contato-select">
+          <div>
+            <input type="radio" name="novidades" id="idSim" />
+            <label for="idSim">Sim</label>
+          </div>
+          <div>
+            <input type="radio" name="novidades" id="idNão" />
+            <label for="idNao">Não</label>
+          </div>
+        </div>
+      </div>
+      <div class="contato-field">
+        <label for="contato-msg">Mensagem</label>
         <textarea name="msg" id="contato-msg" cols="30" rows="10"></textarea>
       </div>
-      <input type="submit" value="Enviar" />
+      <input id="send" type="submit" value="Enviar" />
     </form>
+    <hr />
+    <div id="localizacao">
+      <div>
+        <p>IGV.Dev</p>
+        <p>(48) 9 9999-9999</p>
+        <p>igv@example.com</p>
+        <p> Rua Júlia da Costa, nº 4 - Saco dos Limões, Florianópolis - SC </p>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.503208116583!2d-48.54004978527391!3d-27.608927729247746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952739b5974b0979%3A0xcb856cdcb9506873!2sR.%20J%C3%BAlia%20da%20Costa%2C%204%20-%20Saco%20dos%20Lim%C3%B5es%2C%20Florian%C3%B3polis%20-%20SC%2C%2088045-200!5e0!3m2!1spt-BR!2sbr!4v1631042036988!5m2!1spt-BR!2sbr"
+          width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+      </div>
+    </div>
   </section>
 
-  <form id="localizacao">
-    <div>
-      <p> Nossa localização: </p>
-      <p> Rua Júlia da Costa, nº 4 - Saco dos Limões, Florianópolis - SC </p>
 
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.503208116583!2d-48.54004978527391!3d-27.608927729247746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952739b5974b0979%3A0xcb856cdcb9506873!2sR.%20J%C3%BAlia%20da%20Costa%2C%204%20-%20Saco%20dos%20Lim%C3%B5es%2C%20Florian%C3%B3polis%20-%20SC%2C%2088045-200!5e0!3m2!1spt-BR!2sbr!4v1631042036988!5m2!1spt-BR!2sbr"
-        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-    </div>
-  </form>
-
-
-  <footer>
-    <div>
-      <ul>
-        <li><a href="https://twitter.com" target="_blank">Twitter<img src="./imgs/logo_twitter.png" width="20px"
-              height="20px" /></a></li>
-        <li><a href="https://instagram.com" target="_blank">Instagram<img src="./imgs/logo_instagram.png" width="30px"
-              height="30px" /></a></li>
+  <footer class="footer">
+    <div class="footer-info">
+      <ul class="footer-social">
+        <li><a href="https://twitter.com" target="_blank"><img src="./imgs/svgs/twitter.svg" /></a></li>
+        <li><a href="https://instagram.com" target="_blank"><img src="./imgs/svgs/instagram.svg" /></a></li>
       </ul>
-      <h4>IGV@example.com</h4>
-      <h4>IGV Dev &copy; - 2021</h4>
+
+      <div class="footer-address">
+        <p>IGV@example.com <br />Rua Júlia da Costa, nº 4 <br /> Saco dos Limões, Florianópolis - SC</p>
+      </div>
+
     </div>
+
+    <div class="footer-copyright">
+      <img src="/src/imgs/svgs/footer_img.svg" alt="Footer Image">
+      <p>IGV Dev &copy; - 2021</p>
+    </div>
+
+    </div>
+    <img src="imgs/svgs/footer_bg.svg" class="footer-bg" />
   </footer>
 </body>
 
