@@ -12,6 +12,8 @@
 /* Definindo cor de fundo do corpo, e removendo margens desnecessárias */
 body {
     background-color: #F7F0FA;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* SVG de fundo fica fixado no canto superior esquerdo, com z-index negativo para ficar abaixo dos outros elementos */
