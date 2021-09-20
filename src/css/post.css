@@ -67,6 +67,7 @@ body {
     flex-direction: column;
 }
 
+/* Maior parte das alterações são nos tamanhos das fontes */
 .post {
     display: flex;
     flex-direction: column;

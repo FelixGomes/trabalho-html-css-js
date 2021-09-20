@@ -1,18 +1,20 @@
+/* Variável da cor da fonte */
 :root {
     --font-color: #f0f0f0
 }
 
-
+/* Definindo a fonte do documento */
 * {
     font-family: 'Poppins', sans-serif;
+
 }
 
+/* Definindo cor de fundo do corpo, e removendo margens desnecessárias */
 body {
     background-color: #F7F0FA;
-    margin: 0px;
-    padding: 0px;
 }
 
+/* SVG de fundo fica fixado no canto superior esquerdo, com z-index negativo para ficar abaixo dos outros elementos */
 .bg-1 {
     position: absolute;
     top: 0;
@@ -21,6 +23,7 @@ body {
     width: 100%;
 }
 
+/* Display flex para espaçamento entre os elementos, alinhados ao centro na vertical */
 .header {
     margin: 20px 50px;
     display: flex;
@@ -32,12 +35,14 @@ body {
     display: flex;
 }
 
+/* Removendo decoração dos li, e definindo tamanho e peso da fonte */
 .header-ul li {
     list-style: none;
     font-size: 18pt;
-    font-weight: 300;
+    font-weight: 100;
 }
 
+/* Removendo sublinhado dos links, definindo cor e espaçamento */
 .header-ul li a {
     text-decoration: none;
     color: var(--font-color);
@@ -45,6 +50,7 @@ body {
 
 }
 
+/* Estética geral do botão, com efeito inspirado em "neumorphism"   */
 .header-contrate {
     height: 70px;
     width: 180px;
@@ -60,6 +66,7 @@ body {
     font-size: 20pt;
 }
 
+/* Definindo "hero" (elemento central na tela home), com margem na parte de baixo para melhor espaçamento do documento */
 .hero {
     display: flex;
     padding: 50px 200px;
@@ -72,8 +79,8 @@ body {
     height: 280px;
 }
 
+/* Estética do texto */
 .hero-text {
-    display: inline-block;
     font-size: 44pt;
     padding: 20px;
     font-weight: 100;
@@ -82,10 +89,12 @@ body {
     margin-left: 210px;
 }
 
+/* Detalhes em azul */
 .hero-text span {
     color: #20C2AF;
 }
 
+/* Texto em negrito, roxo */
 .hero-text-outline {
     font-weight: bold;
     color: #5E20C2;
@@ -93,12 +102,14 @@ body {
 }
 
 
+/* Container do conteúdo principal, com posicionamento relativo para o fundo ser definido com posicionamento absoluto */
 .content-container {
     position: relative;
     display: block;
     margin-bottom: 500px;
 }
 
+/* Definindo alinhamento do conteúdo */
 .content {
     position: relative;
     display: flex;
@@ -106,6 +117,7 @@ body {
     justify-content: space-between;
 }
 
+/* SVG de fundo. Movendo no eixo Y para melhor posicionamento da imagem */
 .content-bg {
     position: absolute;
     right: 0;
@@ -120,6 +132,7 @@ body {
     flex-direction: column;
 }
 
+/* Card com pontos chave da empresa, também com design inspirado em "neumorphism" */
 .content-left-card {
     width: 580px;
     background-color: #F6F6F6;
@@ -145,6 +158,7 @@ body {
 
 
 .content-right {
+/* Ajustando altura do conteúdo */
     transform: translateY(-200px);
     height: 100%;
     display: flex;
@@ -175,6 +189,7 @@ body {
 }
 
 .content-right-card p {
+    /* Alinhando texto à direita */
     text-align: right;
     font-size: 20pt;
 }
@@ -199,6 +214,7 @@ body {
 }
 
 
+/* Toda a seção do footer contém alguns ajustes de posicionamento para o efeito final (personagem sentado ao lado do copyright) */
 .footer {
     color: var(--font-color);
     font-weight: 100;

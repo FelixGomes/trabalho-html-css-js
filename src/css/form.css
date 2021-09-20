@@ -1,3 +1,4 @@
+/* Dimensionando o formulário de contato */
 #contato-form {
     padding: 20px 100px;
     margin: 50px 0px;
@@ -13,6 +14,7 @@
     padding: 40px;
 }
 
+/* Tamanho e peso da fonte dos labels */
 .contato-field label {
     font-size: 24pt;
     font-weight: 100;
@@ -43,12 +45,14 @@
     margin: 0px 75px 0px 25px;    
 }
 
+/* Centralizando input radio */
 .contato-select input {
     vertical-align: middle;
     width: 25px;
     height: 25px;
 }
 
+/* Estética do botão de enviar */
 #send {
     margin-top: 50px;
     width: 170px;

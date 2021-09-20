@@ -83,6 +83,7 @@ body {
     font-weight: 100;
 }
 
+/* Card de cada membro da equipe com mesmo design "neumórfico". Cards em flex row, com colunas em flex column */
 .team-card {
     display: flex;
     margin: 100px 300px;

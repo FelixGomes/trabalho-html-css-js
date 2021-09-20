@@ -61,6 +61,7 @@ body {
     z-index: -1;
 }
 
+/* Flex column para simplificar os alinhamentos gerais dos elementos */
 .content {
     display: flex;
     flex-direction: column;
@@ -118,6 +119,7 @@ body {
     text-decoration: none;
 }
 
+/* Centralizando e encurtando o HR */
 hr {
     width: 70%;
     align-self: center;
